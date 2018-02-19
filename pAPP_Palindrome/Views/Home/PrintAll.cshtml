@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "All Palindromes";
+}
+<script src="/Scripts/angPalin.js"></script>
+
+<div class="container" ng-app="myApp">
+    <div ng-controller="PrintCtrl">
+        <h2>Palindromes</h2><br />
+
+        <ul class="list-group">
+            <li ng-repeat="x in str2" class="list-group-item">{{x}}</li>
+     
+        </ul>
+        <p>{{str2}}</p>
+        <p>{{dbresult}}</p>
+    </div>
+</div>
+
